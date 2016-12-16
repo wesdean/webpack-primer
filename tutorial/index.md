@@ -4,6 +4,13 @@ This is a demo app used in a talk about getting started with Webpack.
 
 ## Tutorial
 
+This tutorial will cover some basics of Webpack.
+
+- Installation
+- How to bundle a package
+- How to use loaders
+- How to scope and bundle CSS
+
 ### Installation
 1. **Install Webpack**
    

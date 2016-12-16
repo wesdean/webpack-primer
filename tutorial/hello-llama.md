@@ -70,6 +70,6 @@ and pretty much anything we need to do to build the package.
 The biggest difference between Webpack and task runners like Gulp is its primary purpose.
 Task runners exist to run task. One of these can be bundling the app into a single file, but this isn't necessary.
 Bundlers, like Webpack, exist to bundle files. Intermediate steps may or may not exist to prepare the files to be bundled,
-but the end result is always single bundled file.
+but the end result is always a bundled file.
 
 [Next](hello-llama-html.md)
