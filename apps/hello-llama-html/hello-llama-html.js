@@ -1,9 +1,8 @@
 // require('./styles/hello-llama.css');
 // require('./styles/buttons.css');
-//
+
 // import {LlamaNamer} from './lib/LlamaNamer';
 // import {Showy} from './lib/Showy';
-
 
 let stopButton = document.getElementById('stop-button');
 let startButton = document.getElementById('start-button');

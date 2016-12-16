@@ -5,6 +5,6 @@ let willyClass = require('./styles/willy.css');
 
 import {Llama} from './lib/Llama';
 
-let steve = new Llama('llama-steve', steveClass);
-let george = new Llama('llama-george', georgeClass);
-let willy = new Llama('llama-willy', willyClass);
+// let steve = new Llama('llama-steve', steveClass);
+// let george = new Llama('llama-george', georgeClass);
+// let willy = new Llama('llama-willy', willyClass);
