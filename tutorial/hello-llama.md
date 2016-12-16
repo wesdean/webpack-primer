@@ -3,7 +3,7 @@
 ## Hello, Llama!
 
 Node does not recognize all the ES6 features we will be using, 
-so we will need to install Babel to convert our ES6 code to ES5 during the bundling process.
+so we will need to install Babel to transpile our ES6 code to ES5 during the bundling process.
 
 The Babel loader requires Webpack to be installed locally to the app, so let's take care of that.
 
@@ -58,3 +58,18 @@ Be sure to execute all commands from the above directory.
 Pretty simple, huh?
 What we have done is built a simple Node application 
 and used Webpack to package all the application files into a single file.
+
+Webpack can perform manipulations on the files before packaging them.
+Webpack uses "loaders" to do this. To transpile our ES6 script to ES5 we use a Babel loader.
+
+https://github.com/babel/babel-loader
+
+Using loaders, we can transpile SASS to CSS, embed HTML and CSS into the JS bundle, 
+and pretty much anything we need to do to build the package.
+
+The biggest difference between Webpack and task runners like Gulp is its primary purpose.
+Task runners exist to run task. One of these can be bundling the app into a single file, but this isn't necessary.
+Bundlers, like Webpack, exist to bundle files. Intermediate steps may or may not exist to prepare the files to be bundled,
+but the end result is always single bundled file.
+
+[Next](hello-llama-html.md)

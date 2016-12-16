@@ -39,4 +39,4 @@ This is a demo app used in a talk about getting started with Webpack.
    A one file app to help you get the feel of using Webpack.
    The next app will get a bit more complex, using multiple files and exports.
    
-[Next](app-2.md)
+[Next](hello-llama.md)
