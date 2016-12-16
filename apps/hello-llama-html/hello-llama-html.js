@@ -1,45 +1,44 @@
-import {FloatingLlama} from './FloatingLlama';
+// require('./styles/hello-llama.css');
+// require('./styles/buttons.css');
+//
+// import {LlamaNamer} from './lib/LlamaNamer';
+// import {Showy} from './lib/Showy';
 
-let floatingLlama = new FloatingLlama(document.getElementById('shangri-llama'));
-floatingLlama.float();
 
-let showy = document.getElementById('showy');
-showy.style.display = 'inline-block';
-let showyWidth = showy.offsetWidth;
-showy.style.width = showyWidth;
+let stopButton = document.getElementById('stop-button');
+let startButton = document.getElementById('start-button');
+if (typeof Showy !== 'undefined') {
+  Showy.startTimer('showy');
 
-let showyText = showy.innerText;
-let timerLength = 3000;
+  stopButton.onclick = (event) => {
+    "use strict";
+    event.preventDefault();
 
-let loopCount = 1;
+    Showy.stopTimer();
+  };
 
-let showyTimer = () => {
-  "use strict";
+  startButton.onclick = (event) => {
+    "use strict";
+    event.preventDefault();
 
-  setTimeout(() => {
+    Showy.startTimer('showy');
+  };
+}
+else {
+  stopButton.style.display = 'none';
+  startButton.style.display = 'none';
+}
+
+let nameLlamaForm = document.getElementById('name-llama-form');
+if (typeof LlamaNamer !== 'undefined') {
+  nameLlamaForm.onsubmit = (event) => {
     "use strict";
 
-    if (showy.innerText.length < showyText.length) {
-      showy.innerText += showyText[showy.innerText.length];
+    event.preventDefault();
 
-      showy.classList.remove('color-1');
-      showy.classList.remove('color-2');
-      showy.classList.remove('color-3');
-
-      if(loopCount < 1 || loopCount > 3) {
-        loopCount = 1;
-      }
-
-      showy.classList.add('color-' + loopCount);
-      loopCount++;
-
-      showyTimer();
-    }
-  }, timerLength / showyText.length);
-};
-
-setInterval(() => {
-  "use strict";
-  showy.innerText = '';
-  showyTimer();
-}, timerLength + 1000);
+    let nameEl = document.getElementById('llama-name');
+    LlamaNamer.nameLlama('showy', nameEl.value);
+  };
+} else {
+  nameLlamaForm.style.display = 'none';
+}
