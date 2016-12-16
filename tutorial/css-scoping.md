@@ -18,19 +18,19 @@ Let's bundle the application before we go any further.
 `webpack --config webpack.bundle.js`
 
 If you take a look inside the `index.html` file, you will notice
-that the code each of our llama friends is exactly the same except
+that the code for each of our llama friends is exactly the same except
 for their names and `id` attributes. The names are arbitrary, but
 the `id` attributes will be used to identify each llama in code.
 
 The `css-loader` loader for Webpack allows use to use `css-modules`.
-This enables use to scope CSS classes. When we `require` a CSS file
-an object containing unique IDs is exported base on the "local" classes
+This enables us to scope CSS classes. When we `require` a CSS file,
+an object containing unique IDs is exported based on the "local" classes
 we created.
 
 Local classes are created using the `:local` function within the CSS file.
 Take a look at our llama's CSS files in the `styles` directory for examples.
 
-For up to use these scoped classes, their local class names will need to be
+For us to use these scoped classes, their local class names will need to be
 added to the elements where we want them applied. This application has a Llama
 class already being imported that will do this.
 

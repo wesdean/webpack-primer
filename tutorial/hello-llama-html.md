@@ -30,7 +30,7 @@ Then open `index.html` in a browser.
 
 ###Showy
 
-Showy is a class that will some animation to our llama's name.
+Showy is a class that add will some animation to our llama's name.
 Uncomment the `import` for Showy.
 
 `// import {Showy} from './lib/Showy';`
@@ -51,7 +51,7 @@ CSS files.
 
 From the project root
 
-`npm intall style-loader css-loader --save-dev`
+`npm install style-loader css-loader --save-dev`
 
 `css-loader` loads and parses CSS from a file.
 
@@ -60,7 +60,7 @@ From the project root
 The next thing to do is to add the loaders to `webpack.config.js`.
 We will add only one loader entry to apply both loaders. 
 This is because we will chain the loaders using the "!" symbol.
-My chaining the loaders we use the output of one for input to 
+By chaining the loaders we use the output of one for input to 
 another enabling us to perform multiple transformations 
 on the same files before including them in the bundle.
 
@@ -73,7 +73,7 @@ to
 
 `require('./styles/hello-llama.css');`
 
-Almost there. Let's make our buttos a bit more exciting by
+Almost there. Let's make our buttons a bit more exciting by
 uncommenting `buttons.css`.
 
 Bundle the app and refresh the page in the browser.
