@@ -1,0 +1,23 @@
+.llama {
+  display: inline-block;
+  padding: 16px;
+  margin: 30px;
+}
+
+.llama__wrapper {
+  position: relative;
+  height: 387px;
+}
+
+.llama__name {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.llama__hat {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65px;
+  display: none;
+}

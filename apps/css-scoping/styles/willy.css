@@ -1,0 +1,19 @@
+:local(.llama) .llama__hat {
+  display: block;
+  top: -11px;
+  left: 38px;
+}
+
+:local(.llama) .llama__notes:after {
+  content: 'A proper English gentleman.';
+}
+
+:local(.llama):hover .llama__hat {
+  display: block;
+  top: -42px;
+  left: 38px;
+}
+
+:local(.llama):hover .llama__notes:after {
+  content: 'Wotcha!';
+}

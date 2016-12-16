@@ -1,0 +1,9 @@
+:local(.llama) .llama__image {
+  -ms-transform: rotate(-11deg); /* IE 9 */
+  -webkit-transform: rotate(-11deg); /* Chrome, Safari, Opera */
+  transform: rotate(-11deg);
+}
+
+:local(.llama) .llama__notes:after {
+  content: 'A little tipsy.';
+}

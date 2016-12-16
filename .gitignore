@@ -51,4 +51,4 @@ jspm_packages
 
 .gitignore
 .idea/
-/apps/hello-llama/hello-llama.bundle.js
+*.bundle.js

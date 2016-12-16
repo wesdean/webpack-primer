@@ -1,0 +1,11 @@
+:local(.llama) .llama__name {
+  font-size: 4rem;
+}
+
+:local(.llama) .llama__image {
+  height: 80%;
+}
+
+:local(.llama) .llama__notes:after {
+  content: 'Short with a big ego.'
+}
